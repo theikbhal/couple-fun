@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Watch the hilarious couple prank: Saying see you tomorrow to see my girl's reaction. A funny TikTok video compilation.">
+    <title>SAYING SEE YOU TOMORROW | Couple Pranks | Funny TikTok Video</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Specific override for vertical video if needed */
+        .is-vertical {
+            padding-bottom: 177.78% !important;
+            /* 9:16 */
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="animate-fade-in">
+        <h1>SAYING SEE YOU TOMORROW TO SEE MY GIRLS REACTION</h1>
+        <div class="tags">
+            <span class="tag">#CouplePranks</span>
+            <span class="tag">#TikTok</span>
+            <span class="tag">#FunnyVideo</span>
+            <span class="tag">#PrankCompilation</span>
+        </div>
+    </header>
+
+    <main class="animate-fade-in" style="animation-delay: 0.2s;">
+        <!-- Container for the video. I'll use is-vertical since it's a TikTok video -->
+        <div class="video-container is-vertical" id="videoWrapper">
+            <iframe src="https://www.youtube.com/embed/AR5hAYP8zEY" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <section class="content-section animate-fade-in" style="animation-delay: 0.4s;">
+            <h2>About this Prank</h2>
+            <p>
+                Experience the pure comedy of this viral couple prank. The "See You Tomorrow" challenge catches
+                authentic and hilarious reactions from partners who just aren't ready for the day to end.
+                Perfect for anyone looking for a quick laugh and some relatable couple content.
+            </p>
+            <div style="margin-top: 2rem; display: flex; justify-content: center;">
+                <button onclick="toggleLayout()" id="layoutBtn" class="tag"
+                    style="cursor: pointer; background: var(--accent-color); color: white; border: none; padding: 0.6rem 1.5rem;">
+                    Switch to Wide View
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="animate-fade-in" style="animation-delay: 0.6s;">
+        <p>&copy; 2026 Couple Fun. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleLayout() {
+            const wrapper = document.getElementById('videoWrapper');
+            const btn = document.getElementById('layoutBtn');
+            if (wrapper.classList.contains('is-vertical')) {
+                wrapper.classList.remove('is-vertical');
+                btn.textContent = 'Switch to Vertical View';
+            } else {
+                wrapper.classList.add('is-vertical');
+                btn.textContent = 'Switch to Wide View';
+            }
+        }
+    </script>
+</body>
+
+</html>
